@@ -1,5 +1,5 @@
 <?php
-namespace Mvc_Namespace\core;
+namespace Adminko\Core;
 
 class Model 
 {

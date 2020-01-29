@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Mvc_Namespace\\' => array($baseDir . '/app'),
+    'Adminko\\' => array($baseDir . '/app'),
 );

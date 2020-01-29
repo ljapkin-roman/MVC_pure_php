@@ -1,6 +1,4 @@
 <?php
-namespace mvc_namespace;
-
-use mvc_namespace\app\core\Model as Model;
-$model = new Model();
+ini_set('display_errors');
+require_once 'app/bootstrap.php';
 
