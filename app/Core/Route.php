@@ -1,8 +1,10 @@
 <?php
 namespace Adminko\Core;
 
+
 class Route
 {
+
     static function start()
     {
         $controller_name = 'main';
