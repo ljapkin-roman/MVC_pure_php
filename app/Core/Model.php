@@ -1,9 +1,10 @@
 <?php
 namespace Adminko\Core;
 
-class Model 
+class Model
 {
-    public function hell() {
+    public function hell()
+    {
         print_r("i method model class");
     }
 }

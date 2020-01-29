@@ -1,7 +1,8 @@
 <?php
 namespace Adminko\Core;
 
-class Route {
+class Route
+{
     static function start()
     {
         $controller_name = 'main';
@@ -9,14 +10,12 @@ class Route {
         
         //get name controller
         $routes = explode('/', $_SERVER['REQUEST_URI']);
-        if ( !empty($routes[1]) )
-        {
+        if (!empty($routes[1]) ) {
             $controller_name = $routes[1];
         }
 
         //get name action
-        if ( !empty($routes[2]) )
-        {
+        if (!empty($routes[2]) ) {
             $action_name = $routes[2];
         }
 
@@ -30,8 +29,7 @@ class Route {
         $controller = new $pathController;
         $action = $action_name;
 
-        if(method_exists($controller, $action))
-        {
+        if(method_exists($controller, $action)) {
             $controller->$action();
         }
         else

@@ -1,7 +1,8 @@
 <?php
 namespace Adminko\Core;
 
-class Controller {
+class Controller
+{
     public $model;
     public $view;
 
