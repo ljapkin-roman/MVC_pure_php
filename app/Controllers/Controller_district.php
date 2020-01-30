@@ -1,11 +1,15 @@
 <?php
-class Controller_District extends Controller
+namespace Adminko\Controllers;
+use Adminko\Core\Controller;
+use Adminko\Models\Model_district as Model_district;
+
+class Controller_district extends Controller
 {
     public $model;
 
     function __construct()
     {
-        $this->model = new Model_District();
+        $this->model = new Model_district();
     }
     
     function action_getdata($arg_function=0)

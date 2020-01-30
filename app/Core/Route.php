@@ -21,18 +21,28 @@ class Route
             $action_name = $routes[2];
         }
 
+	if (!empty($routes[3]) ) {
+            $arg_function = $routes[3];
+        }
+
+
         $model_name = 'Model_'.$controller_name;
         $controller_name = 'Controller_'.$controller_name;
         $action_name = 'action_'.$action_name;
         $pathModel = '\\Adminko\\Models\\'.$model_name;
         $model = new $pathModel;
 
+
         $pathController = '\\Adminko\\Controllers\\'.$controller_name;
         $controller = new $pathController;
         $action = $action_name;
-
-        if(method_exists($controller, $action)) {
-            $controller->$action();
+	if(method_exists($controller, $action)) {
+            if(isset($arg_function)) {
+                $controller->$action($arg_function);
+            } else {
+                $controller->$action();
+            }
+            
         }
         else
         {
