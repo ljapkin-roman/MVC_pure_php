@@ -1,6 +1,5 @@
 <?php
 namespace Adminko\Models;
-
 use Adminko\Core\Model;
 
 class Model_district extends Model
