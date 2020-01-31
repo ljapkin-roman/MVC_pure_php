@@ -4,11 +4,11 @@ namespace Adminko\Core;
 class Model
 {
 
-    const DB_HOST = "localhost";
-    const DB_NAME = 'protest14';
+    const DB_HOST = "";
+    const DB_NAME = '';
     const CHARSET = '';
-    const DB_USER = 'roma';
-    const DB_PASSWORD = '230678';
+    const DB_USER = '';
+    const DB_PASSWORD = '';
     public $db;
     public function __construct()
     {
@@ -21,3 +21,4 @@ class Model
     }
      
 }
+$model = new Model();

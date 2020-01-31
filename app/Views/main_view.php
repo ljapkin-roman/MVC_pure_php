@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="/css/chosen.css">
 </head>
 <body>
-    <h1> Register form </h1>
     
     <h1> Register form </h1>
     <p> Как заполнять форму </p>
